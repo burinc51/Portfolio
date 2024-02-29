@@ -16,11 +16,9 @@ function Header(props) {
     width: "45px",
     marginRight: "5px",
     marginLeft: "15px",
-    paddingTop: "5px",
+    // paddingTop: "-15px",
     borderRadius: "50%",
     border: "none",
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
     outline: "none",
     transition: "all 0.2s ease-in-out",
@@ -62,6 +60,13 @@ function Header(props) {
       />
     );
 
+    const scrollToElement = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
   return (
     <Fade top duration={1000} distance="20px">
       <div className="navber sticky-top" style={{backdropFilter: 'blur(5px)',}}>
@@ -81,10 +86,12 @@ function Header(props) {
             <li>
               <NavLink
                 className="homei"
-                to="/home"
+                onClick={() => scrollToElement('skills')}
+                to="#skills"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
+                
               >
                 Home
               </NavLink>
