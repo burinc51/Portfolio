@@ -11,11 +11,11 @@ const settings = {
 const greeting = {
   title: "Hello.",
   title2: "Hrishi",
-  logo_name: "hrishi.p()",
+  logo_name: "c.burin",
   nickname: "hrishi1999 / picleric",
-  full_name: "Hrishi Patel",
+  full_name: "Burin Chornwaree",
   subTitle:
-    "Full Stack Developer, Machine Learning Enthusiast. Always learning.",
+    "Full Stack Developer, Always learning.",
   resumeLink:
     "https://drive.google.com/file/d/1kcvW8P65jWZFeKR6Jopf3nrQLA1qJCwn/view?usp=sharing",
   mail: "mailto:hrishipatel99@gmail.com",
