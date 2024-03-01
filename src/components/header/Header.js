@@ -16,7 +16,6 @@ function Header(props) {
     width: "45px",
     marginRight: "5px",
     marginLeft: "15px",
-    // paddingTop: "-15px",
     borderRadius: "50%",
     border: "none",
     backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
@@ -29,7 +28,7 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
+  const link =  "/";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
 
@@ -71,7 +70,9 @@ function Header(props) {
     <Fade top duration={1000} distance="20px">
       <div className="navber sticky-top" style={{backdropFilter: 'blur(5px)',}}>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
+          <NavLink 
+            onClick={() => scrollToElement('root')}
+            to={"/"}  className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
@@ -93,24 +94,26 @@ function Header(props) {
                 style={{ borderRadius: 5, color: theme.text }}
                 
               >
-                Home
+                About Me
               </NavLink>
             </li>
             <li>
               <NavLink
                 className="ec"
-                to="/education"
+                onClick={() => scrollToElement('education')}
+                to="#education"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Education and Certifications
+                Education
               </NavLink>
             </li>
             <li>
               <NavLink
                 className="xp"
-                to="/experience"
+                onClick={() => scrollToElement('experience')}
+                to="#experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -137,7 +140,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Contact and Resume
+                Contact
               </NavLink>
             </li>
             

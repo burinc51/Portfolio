@@ -1,21 +1,15 @@
 /* Change this file to get your personal Porfolio */
 
-// Website related settings
-const settings = {
-  isSplash: false, // Change this to true if you want to use the splash screen.
-  useCustomCursor: false, // Change this to false if you want the good'ol cursor
-  googleTrackingID: "UA-174238252-2",
-};
 
 //Home Page
 const greeting = {
   title: "Hello.",
-  title2: "Hrishi",
-  logo_name: "c.burin",
+  title2: "Burin",
+  logo_name: "C.burin()",
   nickname: "hrishi1999 / picleric",
   full_name: "Burin Chornwaree",
   subTitle:
-    "Full Stack Developer, Always learning.",
+    "",
   resumeLink:
     "https://drive.google.com/file/d/1kcvW8P65jWZFeKR6Jopf3nrQLA1qJCwn/view?usp=sharing",
   mail: "mailto:hrishipatel99@gmail.com",
@@ -322,30 +316,26 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Dalhousie University",
-      subtitle: "Masters in Applied Computer Science",
-      logo_path: "dal.png",
-      alt_name: "DAL",
-      duration: "2022 - 2023",
+      title: "KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK (KMUTNB)",
+      subtitle: "Electronic Engineering Technology (Computer)",
+      logo_path: "logo_kmutnb.png",
+      alt_name: "kmutnb",
+      duration: "2022 - present",
       descriptions: [
-        "⚡ Studied Advanced Software Development Concepts, Data Management & Warehousing",
-        "⚡ Learn Advanced Topics in Cloud Computing, Cloud Architecture along with Serverless Computing",
-        "⚡ Worked on projects on courses like Mobile Computing and Web Technologies.",
+        "⚡ GPXA: 3.35",
       ],
-      website_link: "https://www.dal.ca/",
+      website_link: "https://www.kmutnb.ac.th",
     },
     {
-      title: "SAL Engineering and Technical Institute",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "sal.png",
-      alt_name: "SETI",
-      duration: "2017 - 2021",
+      title: "CHANTHABURI TECHNICAL COLLEGE.",
+      subtitle: "High vocational Certificate in Computer Technology",
+      logo_path: "logo_technic.png",
+      alt_name: "technic",
+      duration: "2020 - 2022",
       descriptions: [
-        "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
-        "⚡ I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
+        ""
       ],
-      website_link: "https://www.sal.edu.in/",
+      website_link: "https://www.technicchan.ac.th",
     },
   ],
 };
@@ -487,7 +477,7 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Internship ",
   description:
     "I've completed two internships. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
   header_image_path: "experience.svg",
@@ -1009,7 +999,6 @@ const projects = {
 };
 
 export {
-  settings,
   greeting,
   socialMediaLinks,
   skills,

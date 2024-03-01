@@ -3,13 +3,17 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  const history = useNavigate();
+
+  const handleClick = () => {
+    history("/contact");
+  };
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -20,7 +24,7 @@ export default function Greeting(props) {
 
   return (
     <Fade bottom duration={2000} distance="40px">
-      <div className="greet-main" id="greeting">
+      <div className="greet-main container" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
@@ -34,6 +38,7 @@ export default function Greeting(props) {
                   {greeting.full_name}.{" "}
                 </span>
                 {greeting.subTitle}
+                <br/>
                 <span> Welcome To my Portfolio.</span>
               </p>
               <SocialMedia />
@@ -41,9 +46,7 @@ export default function Greeting(props) {
                 <button
                   {...styles}
                   className="button"
-                  onClick={() => {
-                    history.push("/contact");
-                  }}
+                  onClick={handleClick}
                 >
                   Contact Me
                 </button>
