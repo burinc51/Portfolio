@@ -4,7 +4,7 @@ import { Fade, Flip } from "react-reveal";
 import { style } from "glamor";
 
 function DegreeCard(props) {
-  const degree = props.degree;
+  const propsType = props.degree;
   const theme = props.theme;
 
   const style_img = style({
@@ -12,9 +12,8 @@ function DegreeCard(props) {
     height: "auto",
     borderRadius: " 50%",
     padding: "10px",
-    border: `1px solid ${theme.text}`,
-    marginRight: "50px",
-    boxShadow: `0px 0px 2px ${theme.text}`,
+    // border: `1px solid ${theme.text}`,
+    // boxShadow: `0px 0px 2px ${theme.text}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
       color: "rgba(255, 255, 255, 1)",
@@ -26,6 +25,8 @@ function DegreeCard(props) {
       width: "175px",
     },
   });
+
+  
 
   const card_body = style({
     border: `1px solid ${theme.text}`,
@@ -64,19 +65,19 @@ function DegreeCard(props) {
       boxShadow: `0 2px 10px ${theme.accentColor}`,
     },
   });
-  if(degree.alt_name == "kmutnb" || degree.alt_name == "technic"){
+  if(propsType.alt_name === "kmutnb" || propsType.alt_name === "technic"){
     return (
       <div className="degree-card">
         <Flip left duration={2000}>
-          <div {...style_img}>
+          <div {...style_img} style={{marginRight: "50px",}}>
             <img
               style={{
                 maxWidth: "100%",
                 maxHeight: "100%",
                 transform: "scale(100%, 100%)",
               }}
-              src={require(`../../assests/images/${degree.logo_path}`)}
-              alt={degree.alt_name}
+              src={require(`../../assests/images/${propsType.logo_path}`)}
+              alt={propsType.alt_name}
               draggable="false" 
             />
           </div>
@@ -89,20 +90,20 @@ function DegreeCard(props) {
             >
               <div className="body-header-title">
                 <h2 className="card-title" style={{ color: theme.text }}>
-                  {degree.title}
+                  {propsType.title}
                 </h2>
                 <h3 className="card-subtitle" style={{ color: theme.text }}>
-                  {degree.subtitle}
+                  {propsType.subtitle}
                 </h3>
               </div>
               <div className="body-header-duration">
                 <h3 className="duration" style={{ color: theme.text }}>
-                  {degree.duration}
+                  {propsType.duration}
                 </h3>
               </div>
             </div>
             <div className="body-content">
-              {degree.descriptions.map((sentence) => {
+              {propsType.descriptions.map((sentence) => {
                 return (
                   <p
                     key={sentence}
@@ -114,7 +115,7 @@ function DegreeCard(props) {
                 );
               })}
               <a
-                href={degree.website_link}
+                href={propsType.website_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none", textAlign: "center" }}
@@ -138,22 +139,8 @@ function DegreeCard(props) {
     );
   }else{
     return(
-      <div className="degree-card">
-        <Flip left duration={2000}>
-          <div {...style_img}>
-            <img
-              style={{
-                maxWidth: "100%",
-                maxHeight: "100%",
-                transform: "scale(100%, 100%)",
-              }}
-              src={require(`../../assests/images/${degree.logo_path}`)}
-              alt={degree.alt_name}
-              draggable="false" 
-            />
-          </div>
-        </Flip>
-        <Fade right duration={2000} distance="40px">
+      <div className="degree-card ">
+        <Fade left duration={2000} distance="40px">
           <div {...card_body}>
             <div
               className="body-header"
@@ -161,20 +148,20 @@ function DegreeCard(props) {
             >
               <div className="body-header-title">
                 <h2 className="card-title" style={{ color: theme.text }}>
-                  {degree.title}
+                  {propsType.title}
                 </h2>
                 <h3 className="card-subtitle" style={{ color: theme.text }}>
-                  {degree.subtitle}
+                  {propsType.subtitle}
                 </h3>
               </div>
               <div className="body-header-duration">
                 <h3 className="duration" style={{ color: theme.text }}>
-                  {degree.duration}
+                  {propsType.duration}
                 </h3>
               </div>
             </div>
             <div className="body-content">
-              {degree.descriptions.map((sentence) => {
+              {propsType.descriptions.map((sentence) => {
                 return (
                   <p
                     key={sentence}
@@ -185,27 +172,23 @@ function DegreeCard(props) {
                   </p>
                 );
               })}
-              <a
-                href={degree.website_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none", textAlign: "center" }}
-              >
-                <p
-                  {...button_visit}
-                  style={{
-                    marginRight: "23px",
-                    textDecoration: "none",
-                    float: "right",
-                    backgroundColor: theme.accentColor,
-                  }}
-                >
-                  Visit Website
-                </p>
-              </a>
             </div>
           </div>
         </Fade>
+        <Flip right duration={2000}>
+          <div {...style_img} style={{marginLeft: "50px",}}>
+            <img
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                transform: "scale(100%, 100%)",
+              }}
+              src={require(`../../assests/images/${propsType.logo_path}`)}
+              alt={propsType.alt_name}
+              draggable="false" 
+            />
+          </div>
+        </Flip>
       </div>
     )
   }

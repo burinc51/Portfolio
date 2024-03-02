@@ -59,8 +59,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin:0 5%;
   margin-top: 60px;
 }
 

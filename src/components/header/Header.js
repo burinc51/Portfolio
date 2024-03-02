@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { greeting } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
@@ -28,7 +28,6 @@ function Header(props) {
     },
   });
 
-  const link =  "/";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
 
@@ -124,7 +123,8 @@ function Header(props) {
             <li>
               <NavLink
                 className="projects"
-                to="/projects"
+                onClick={() => scrollToElement('projects')}
+                to="#projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}

@@ -16,6 +16,7 @@ function Home(props) {
       <About theme={props.theme} />
       <Education theme={props.theme} setTheme={props.setTheme}/>
       <Experience theme={props.theme} setTheme={props.setTheme}/>
+      <Projects theme={props.theme} setTheme={props.setTheme}/>
       {/* <Footer theme={props.theme} /> */}
     </div>
   );

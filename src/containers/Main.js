@@ -1,13 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route,Routes,BrowserRouter} from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
-// import Splash from "../pages/splash/Splash";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Contact from "../pages/contact/ContactComponent";
-import Projects from "../pages/projects/Projects";
-import { settings } from "../portfolio.js";
-// import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min.js";
 
 export default function Main(propss) {
   return(

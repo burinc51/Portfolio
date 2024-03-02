@@ -1,5 +1,4 @@
 import React from "react";
-import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import "./Experience.css";
 import { Fade } from "react-reveal";
@@ -11,7 +10,7 @@ function Experience(props) {
   const theme = props.theme;
   console.log(props.setTheme);
   return (
-    <div className="experience-main container" id="experience" style={{padding:'110px'}}>
+    <div className="experience-main container mt-2" id="experience" style={{paddingTop:'110px'}}>
       <div className="basic-experience">
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
@@ -31,22 +30,17 @@ function Experience(props) {
               >
                 Internship
               </h3>
-              <p
-                className="experience-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {experience["description"]}
-              </p>
             </div>
           </div>
         </Fade>
       </div>
-      {experience.experience.map((degree) => {
-          return (
-            <DegreeCard key={degree.title} degree={degree} theme={theme} />
-          );
-        })}
-      {/* <ExperienceAccordion sections={experience["sections"]} theme={theme} /> */}
+      <div className="mt-5" style={{margin:'0 5%'}}>
+        {experience.experience.map((degree) => {
+            return (
+              <DegreeCard key={degree.title} degree={degree} theme={theme} />
+            );
+          })}
+      </div>
     </div>
   );
 }

@@ -70,11 +70,16 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
+.fontName{
+  font-size: 50px;
+}
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
+  }
+  .fontName{
+    font: 20px;
   }
 
   .greeting-text-p {
