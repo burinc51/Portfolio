@@ -1,9 +1,11 @@
 import React from "react";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
+import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import "./Experience.css";
-import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import { experience } from "../../portfolio";
+
 
 function Experience(props) {
   const theme = props.theme;
@@ -21,13 +23,13 @@ function Experience(props) {
                 className="experience-heading-text"
                 style={{ color: theme.text }}
               >
-                {experience.title}
+                Experience
               </h1>
               <h3
                 className="experience-heading-sub-text"
                 style={{ color: theme.text }}
               >
-                {experience["subtitle"]}
+                Internship
               </h3>
               <p
                 className="experience-header-detail-text subTitle"
@@ -39,7 +41,12 @@ function Experience(props) {
           </div>
         </Fade>
       </div>
-      <ExperienceAccordion sections={experience["sections"]} theme={theme} />
+      {experience.experience.map((degree) => {
+          return (
+            <DegreeCard key={degree.title} degree={degree} theme={theme} />
+          );
+        })}
+      {/* <ExperienceAccordion sections={experience["sections"]} theme={theme} /> */}
     </div>
   );
 }
