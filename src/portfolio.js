@@ -124,11 +124,11 @@ const projects = {
       ],
     },
     {
-      name: "Web upload file ",
+      name: "Miniproject Cloud Computing",
       url: "https://github.com/burinc51/azure-storage-php",
       description:
-        "You personal journaling companion, goals & daily challenges! About 5k+ downloads on Play Store.",
-      img:'index.png',
+        "project",
+      img:'miniproject.png',
         languages: [
         {
           name: "php",

@@ -23,6 +23,7 @@ export default function Greeting(props) {
   });
 
   return (
+
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main container" id="greeting">
         <div className="greeting-main">

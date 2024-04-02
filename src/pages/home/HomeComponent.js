@@ -7,7 +7,6 @@ import Experience from "../experience/Experience";
 import Contact from "../contact/ContactComponent";
 import Projects from "../projects/Projects";
 import Footer from "../../components/footer/Footer";
-
 function Home(props) {
   return (
     <div>
