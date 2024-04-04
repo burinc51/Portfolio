@@ -91,7 +91,6 @@ function Header(props) {
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
-                
               >
                 About Me
               </NavLink>
@@ -132,10 +131,24 @@ function Header(props) {
                 Projects
               </NavLink>
             </li>
+            
+            <li>
+              <NavLink
+                className="skills"
+                onClick={() => scrollToElement('skill')}
+                to="#skill"
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ borderRadius: 5, color: theme.text }}
+              >
+                Skills
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 className="cr"
-                to="/contact"
+                onClick={() => scrollToElement('contact')}
+                to="#contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
@@ -143,7 +156,6 @@ function Header(props) {
                 Contact
               </NavLink>
             </li>
-            
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>

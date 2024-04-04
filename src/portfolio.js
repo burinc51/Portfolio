@@ -16,14 +16,11 @@ const greeting = {
 };
 
 const socialMediaLinks = {
-  /* Your Social Media Link */
-  github: "https://github.com/hrishi1999",
-  linkedin: "https://www.linkedin.com/in/hrishi-patel-ba8476140/",
-  gmail: "hrishipatel99@gmail.com",
-  gitlab: " ",
-  facebook: " ",
-  twitter: "https://twitter.com/hrishi_55",
-  instagram: "https://www.instagram.com/picleric/",
+  github: "https://github.com/burinc51",
+  linkedin: "https://www.linkedin.com/in/burin-chornwaree/",
+  gmail: "burin.chornwaree@gmail.com",
+  facebook: "https://www.facebook.com/burin.chornware.3",
+  
 };
 
 const degrees = {

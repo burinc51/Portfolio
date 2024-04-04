@@ -8,13 +8,6 @@ import ProjectsImg from "./ProjectsImg";
 function Projects(props) {
   const theme = props.theme;
 
-  // const styles = style({
-  //   backgroundColor: `${theme.accentBright}`,
-  //   ":hover": {
-  //     boxShadow: `0 5px 15px ${theme.accentBright}`,
-  //   },
-  // });
-
   return (
     <div className="projects-main container" style={{paddingTop:'110px'}} id="projects">
       <div className="basic-projects">

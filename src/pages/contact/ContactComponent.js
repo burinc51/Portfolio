@@ -1,36 +1,23 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
-import { style } from "glamor";
+import { contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
 
 function Contact(props) {
   const theme = props.theme;
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
-
   return (
-    <div className="contact-main">
-      <Header theme={theme} setTheme={props.setTheme} />
+    <div className="contact container" id="contact">
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
-            <div className="contact-heading-img-div">
+            <div className="contact-heading-img-div d-flex justify-content-center">
               <img
                 className="profile-pic"
-                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                src="https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/329211318_723361519396840_572475017180501934_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH0xF_xu3AAKhHs15VyzOErfnQsYlnKP-Z-dCxiWco_5rS6qK25NnmHalWYtykpPjD3x3hUSM5WtDvwsRkXtnlU&_nc_ohc=6WNrZeOGnkUAb4i2DA9&_nc_oc=AdgFpliayfj5NuZYIBGPTvpoVp0W19eCo_Lu5e7zcL7u6tbnAjREeFBVf5AS6gcGDsI&_nc_ht=scontent.fbkk5-5.fna&oh=00_AfDBjDkj6npZGAnIjciDlmIV0CgYrohOQA-5qBclCwwZzA&oe=66147B2A"
                 alt=""
               />
             </div>
@@ -50,37 +37,11 @@ function Contact(props) {
               <SocialMedia />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
-              </a>
             </div>
           </div>
         </Fade>
-        <Fade bottom duration={1000} distance="40px">
-          <div className="blog-heading-div">
-            <div className="blog-heading-text-div">
-              <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                {blogSection["title"]}
-              </h1>
-              <p
-                className="blog-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {blogSection["subtitle"]}
-              </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Medium Profile
-                </a>
-              </div>
-            </div>
-            <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
-            </div>
-          </div>
-        </Fade>
+       
       </div>
-      <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );
 }

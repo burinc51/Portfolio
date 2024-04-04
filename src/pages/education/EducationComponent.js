@@ -14,6 +14,7 @@ import transcript from "../../assests/pdf/transcript.pdf"
 
 
 function Education(props) {
+
   const [showMd_r, setShowMd_r] = useState(false)
   const [showMd_t, setShowMd_t] = useState(false)
 
@@ -58,12 +59,13 @@ function Education(props) {
               </h3>
             </div>
           </div>
+          <Educations theme={props.theme} />
+          <div className="d-flex justify-content-center ">
+            <button className="btn btn-primary m-1" onClick={() => showResume()}>Resume</button>
+            <button className="btn btn-primary m-1" onClick={() => showTranscript()}>Transcript</button>
+          </div>
         </Fade>
-        <Educations theme={props.theme} />
-        <div className="d-flex justify-content-center ">
-          <button className="btn btn-primary m-1" onClick={() => showResume()}>Resume</button>
-          <button className="btn btn-primary m-1" onClick={() => showTranscript()}>Transcript</button>
-        </div>
+
       </div>
 
       <Modal show={showMd_r} onHide={() => setShowMd_r(false)} animation={true} className="custom-modal" dialogClassName="modal-lg">

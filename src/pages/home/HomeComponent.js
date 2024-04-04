@@ -7,6 +7,7 @@ import Experience from "../experience/Experience";
 import Contact from "../contact/ContactComponent";
 import Projects from "../projects/Projects";
 import Footer from "../../components/footer/Footer";
+import Skill from "../skill/skil";
 function Home(props) {
   return (
     <div>
@@ -16,7 +17,9 @@ function Home(props) {
       <Education theme={props.theme} setTheme={props.setTheme}/>
       <Experience theme={props.theme} setTheme={props.setTheme}/>
       <Projects theme={props.theme} setTheme={props.setTheme}/>
-      {/* <Footer theme={props.theme} /> */}
+      <Skill theme={props.theme} setTheme={props.setTheme}/>
+      <Contact theme={props.theme} setTheme={props.setTheme}/>
+      <Footer theme={props.theme} />
     </div>
   );
 }

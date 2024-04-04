@@ -16,7 +16,7 @@ export default function Skills(props) {
       <div className="row">
         <div className="col-sm-6" style={{}}>
           <Fade bottom distance="10%">
-            <img className="my-profile" src={"https://icons.veryicon.com/png/o/business/thickness-linear-monochrome-icon/personnel-6.png"} alt="My Profile" draggable="false" />
+            <img className="my-profile" src={"https://lh3.googleusercontent.com/a/ACg8ocJj8DbGmhFMzw8G-Os_De2cgM6fSbx6OUNLP7yXTOnzcscczD8=s288-c-no"} alt="My Profile" draggable="false" />
           </Fade>
         </div>
         <div className="aboutme col-sm-6" style={{}}>
