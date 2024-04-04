@@ -92,13 +92,6 @@ const contactPageData = {
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I don't blog frequently but when I do something awesome, I do try my best to write a blog about it.",
-    link: "https://medium.com/@hrishipatel99",
-    avatar_image_path: "blogs_image.svg",
-  },
 };
 
 const projects = {
@@ -111,7 +104,7 @@ const projects = {
       languages: [
         {
           name: "React.js",
-          iconifyClass: "skill-icons:react-dark",
+          iconifyClass: "skill-icons:react-light",
         },
         {
           name: "Bootstrap",
@@ -121,10 +114,10 @@ const projects = {
       ],
     },
     {
-      name: "Miniproject Cloud Computing",
+      name: "WebFileDrop",
       url: "https://github.com/burinc51/azure-storage-php",
       description:
-        "project",
+        "Miniproject cloud computing",
       img:'miniproject.png',
         languages: [
         {
@@ -135,6 +128,27 @@ const projects = {
           name: "Azure",
           iconifyClass: "devicon:azure",
         },
+      ],
+    },
+    {
+      name: "webShorturl and Qrcode",
+      url: "https://github.com/burinc51/ShortUrl-front.git",
+      description:
+        "",
+      img:'shorturl.png',
+        languages: [
+        {
+          name: "React.js",
+          iconifyClass: "skill-icons:react-light",
+        },
+        {
+          name: "Bootstrap",
+          iconifyClass: "skill-icons:bootstrap",
+        },
+        {
+          name : "Node.js",
+          iconifyClass: "logos:nodejs-icon-alt"
+        }
       ],
     },
  
