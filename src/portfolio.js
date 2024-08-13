@@ -55,7 +55,7 @@ const experience = {
     { 
       title: "Laconic Technology co. ltd",
       subtitle: "Frontend Developer",
-      logo_path: "Advice_logo.png",
+      logo_path: "laconic.png",
       alt_name: "Advice",
       duration: "May. - Present. 2024",
       descriptions: [
@@ -99,7 +99,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "hrishi2.png",
+    // profile_image_path: "hrishi2.png",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },
