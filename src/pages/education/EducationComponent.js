@@ -31,13 +31,13 @@ function Education(props) {
   const DownloadResume = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = resume;
-    downloadLink.download = "Resume_Burin_Chornwaree.pdf";
+    downloadLink.download = "Resume_บุรินทร์_จรวารี.pdf";
     downloadLink.click();
   };
   const DownloadTranscript = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = transcript;
-    downloadLink.download = "transcript_Burin_Chornwaree.pdf";
+    downloadLink.download = "transcript_บุรินทร์_จรวารี.pdf";
     downloadLink.click();
   };
 

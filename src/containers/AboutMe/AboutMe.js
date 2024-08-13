@@ -24,10 +24,10 @@ export default function Skills(props) {
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am <span style={{color:' rgb(227, 64, 95)'}}>burin Chornwaree</span> (GOT). Now studying in the fourth year of bachelor’s degree in Electronic Computer Technology at King Mongkut University of Technology North Bangkok.
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I can learn quickly and I am interested in <span style={{color:' rgb(227, 64, 95)'}}>Cloud computing</span>, <span style={{color:' rgb(227, 64, 95)'}}>Backend Frontend</span>, 
-              <span style={{color:' rgb(227, 64, 95)'}}>Web and Mobile Developer</span>, 
-              <span style={{color:' rgb(227, 64, 95)'}}>Full-stack Developer</span>,
-              Now I'm preparing to find an internship.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have front-end development experience from an internship, 
+              where I worked with <span style={{color:' rgb(227, 64, 95)'}}> TypeScript </span> ,<span style={{color:' rgb(227, 64, 95)'}}>  Tailwind CSS</span> , and <span style={{color:' rgb(227, 64, 95)'}}>  React.js </span> to build dynamic and responsive web applications. 
+              While I have developed a solid foundation in front-end technologies, my true passion lies in back-end development. 
+              I am eager to expand my expertise and take on full-stack challenges
             </p>
           </Fade>
         </div>

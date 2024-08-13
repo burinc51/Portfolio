@@ -10,9 +10,9 @@ const greeting = {
   full_name: "Burin Chornwaree",
   subTitle:
     "",
-  resumeLink:
-    "https://drive.google.com/file/d/1kcvW8P65jWZFeKR6Jopf3nrQLA1qJCwn/view?usp=sharing",
-  mail: "mailto:hrishipatel99@gmail.com",
+  // resumeLink:
+  //   "https://drive.google.com/file/d/1kcvW8P65jWZFeKR6Jopf3nrQLA1qJCwn/view?usp=sharing",
+  // mail: "mailto:hrishipatel99@gmail.com",
 };
 
 const socialMediaLinks = {
@@ -52,6 +52,17 @@ const degrees = {
 
 const experience = {
   experience: [
+    { 
+      title: "Laconic Technology co. ltd",
+      subtitle: "Frontend Developer",
+      logo_path: "Advice_logo.png",
+      alt_name: "Advice",
+      duration: "May. - Present. 2024",
+      descriptions: [
+        "⚡ Developed and maintained web applications using React.js, TypeScript, Tailwind CSS, and Redux",
+        "⚡ Debugged and resolved issues as assigned"
+      ],
+    },
     { 
       title: "Advice IT Chanthaburi",
       subtitle: "Computer technicians And Salesman",
